@@ -63,7 +63,7 @@ bool buscarOrden(vector<int> V,int Nro_de_Ordenados){
     int c=1;
     for (size_t x = 0; x < V.size()-1; x++)
     {
-        if(c!=Nro_de_Ordenados){
+        if(c!=3){
             if(V[x]<V[x+1]){
                 c++;
             }else{
@@ -73,7 +73,7 @@ bool buscarOrden(vector<int> V,int Nro_de_Ordenados){
             break;
         }
     }   
-    return c==Nro_de_Ordenados?true:false;
+    return c==3?true:false;
 }
 
 
